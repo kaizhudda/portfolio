@@ -1,16 +1,17 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 class BlogPostContentulTemplate extends React.Component {
   render() {
     const post = this.props.data.contentfulBlogPost
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    console.log(post.childContentfulBlogPostContentRichTextNode.content);
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -29,7 +30,9 @@ class BlogPostContentulTemplate extends React.Component {
               {post.title}
             </h1>
           </header>
-          <section dangerouslySetInnerHTML={{ __html: post.childContentfulBlogPostContentRichTextNode.json }} />
+          <div>
+            {documentToReactComponents(post.content.json)}
+          </div>
           <hr
             style={{
               marginBottom: rhythm(1),
@@ -86,6 +89,9 @@ export const pageQuery = graphql`
       author
       subtitle
       childContentfulBlogPostContentRichTextNode {
+        content
+      }
+      content {
         json
       }
     }
