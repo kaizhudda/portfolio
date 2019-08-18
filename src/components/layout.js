@@ -55,7 +55,7 @@ class Layout extends React.Component {
     }
     return (
       <LayoutWrapper>
-        <SideNavigation />
+        <SideNavigation location={location} />
         <LayoutContent>
           <header>{header}</header>
           <main>{children}</main>
