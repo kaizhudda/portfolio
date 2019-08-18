@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
+import SideNavigation from './side-navigation';
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -52,24 +54,32 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+      <LayoutWrapper>
+        <SideNavigation />
+        <LayoutContent>
+          <header>{header}</header>
+          <main>{children}</main>
+          <footer>
+            © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+        </LayoutContent>
+      </LayoutWrapper>
     )
   }
 }
 
 export default Layout
+
+const LayoutWrapper = styled.div`
+  background: #e8e8e8;
+`
+
+const LayoutContent = styled.section`
+    margin-left: 225px;
+    /* margin-right: auto; */
+    /* max-width: ${rhythm(24)}; */
+    /* padding: ${rhythm(1.5)} ${rhythm(3 / 4)}; */
+    min-height: 100vh;
+`

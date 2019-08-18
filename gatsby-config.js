@@ -86,6 +86,7 @@ module.exports = {
         spaceId: 'f30xjsaqowg6',
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
-    }
+    },
+    `gatsby-plugin-styled-components`
   ],
 }
