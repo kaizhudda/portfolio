@@ -1,67 +1,21 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allContentfulBlogPost.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={"index"}>
         <SEO title="All posts" />
         <Bio />
-        {posts.map(({ node }) => {
-          const title = node.title || node.slug
-          return (
-            <article key={node.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.slug}>
-                    {title}
-                  </Link>
-                </h3>
-              </header>
-              <section>
-                <p>
-                  {node.subtitle}
-                </p>
-              </section>
-            </article>
-          )
-        })}
+        <Link to="/blog">Blog</Link>
       </Layout>
     )
   }
 }
 
 export default BlogIndex
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allContentfulBlogPost {
-      edges {
-        node {
-          title
-          subtitle
-          author
-          slug
-        }
-      }
-    }
-  }
-`
