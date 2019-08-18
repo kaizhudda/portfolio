@@ -4,7 +4,12 @@ import styled from "styled-components"
 const SideNavigation = () => {
   return (
     <SideNav>
-      About Us
+      <Menu>
+        <MenuItem>About</MenuItem>
+        <MenuItem>Experience</MenuItem>
+        <MenuItem>About</MenuItem>
+        <MenuItem>About</MenuItem>
+      </Menu>
     </SideNav>
   )
 }
@@ -21,4 +26,12 @@ const SideNav = styled.div`
     overflow: auto;
     z-index: 99;
     overflow-x: hidden;
+`
+
+const Menu = styled.ul`
+  list-style: none;
+`
+
+const MenuItem = styled.li`
+
 `

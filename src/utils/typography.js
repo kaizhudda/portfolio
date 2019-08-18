@@ -1,17 +1,25 @@
 import Typography from "typography"
-import sutroTheme from "typography-theme-sutro"
 
-sutroTheme.overrideThemeStyles = () => {
-  return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
+
+const typography = new Typography({
+  googleFonts: [
+    {
+      name: 'Nunito Sans',
+      styles: [
+        '300',
+        '400',
+        '600',
+        '700',
+        '800',
+        '900'
+      ],
     },
-  }
-}
-
-delete sutroTheme.googleFonts
-
-const typography = new Typography(sutroTheme)
+  ],
+  baseFontSize: '18px',
+  baseLineHeight: 1.666,
+  headerFontFamily: ['Nunito Sans', 'sans-serif'],
+  bodyFontFamily: ['Nunito Sans', 'sans-serif'],
+})
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
