@@ -122,7 +122,7 @@ const SocialMediaBar = styled.ul`
   @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-5rem);
   }
 
   80% {

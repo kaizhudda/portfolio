@@ -73,13 +73,14 @@ class Layout extends React.Component {
 export default Layout
 
 const LayoutWrapper = styled.div`
-  background: #e8e8e8;
+  background: #fafafa;
+  margin-left: 225px;
 `
 
 const LayoutContent = styled.section`
-    margin-left: 225px;
-    /* margin-right: auto; */
-    /* max-width: ${rhythm(24)}; */
-    /* padding: ${rhythm(1.5)} ${rhythm(3 / 4)}; */
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: ${rhythm(27)}; */
+    padding: ${rhythm(1.5)} ${rhythm(1.5)};
     min-height: 100vh;
 `
