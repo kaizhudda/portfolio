@@ -34,8 +34,15 @@
     border-width: 2px;
     border: 2px solid #8c43ff;
 
-    &::after {
+    &:hover {
+      transform: translateY(-0.3rem);
+      /* // X, Y, BLUR,  */
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
       background: #8c43ff;
+
+      &::after {
+        background: #8c43ff;
+      }
     }
   }
 

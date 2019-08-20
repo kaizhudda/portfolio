@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer";
 import CTA from "../components/call-to-action";
+import Companies from "../components/companies";
 
 import '../styles/pages/index.scss'
 
@@ -15,6 +16,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={"index"}>
         <SEO title="Home" />
+        <Companies />
         <CTA />
         <Footer />
         <Link to="/blog">Blog</Link>

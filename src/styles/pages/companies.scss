@@ -1,0 +1,21 @@
+.Companies {
+  border-top: 1px solid #e6ecf8;
+  padding: 14.4rem 2.4rem;
+  background: white;
+
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+      height: 75px;
+    }
+  }
+}
