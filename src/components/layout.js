@@ -55,9 +55,9 @@ class Layout extends React.Component {
     }
     return (
       <LayoutWrapper>
-        <SideNavigation location={location} />
+        {/* <SideNavigation location={location} /> */}
         <LayoutContent>
-          <header>{header}</header>
+          {/* <header>{header}</header> */}
           <main>{children}</main>
           <footer>
             © {new Date().getFullYear()}, Built with
@@ -74,13 +74,12 @@ export default Layout
 
 const LayoutWrapper = styled.div`
   background: #fafafa;
-  margin-left: 225px;
+  /* margin-left: 225px; */
 `
 
 const LayoutContent = styled.section`
-    margin-left: auto;
-    margin-right: auto;
     /* max-width: ${rhythm(27)}; */
-    padding: ${rhythm(1.5)} ${rhythm(1.5)};
+    /* padding: ${rhythm(1.5)} ${rhythm(1.5)}; */
     min-height: 100vh;
+    width: 100%;
 `

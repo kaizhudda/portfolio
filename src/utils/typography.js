@@ -15,7 +15,7 @@ const typography = new Typography({
       ],
     },
   ],
-  baseFontSize: '18px',
+  baseFontSize: '10px',
   baseLineHeight: 1.666,
   headerFontFamily: ['Nunito Sans', 'sans-serif'],
   bodyFontFamily: ['Nunito Sans', 'sans-serif'],

@@ -67,7 +67,7 @@ const Header = styled.div`
   padding: 16px 0 0;
 
   svg {
-    font-size: 45px;
+    font-size: 4.5rem;
     color: #fcb740;
   }
 `
@@ -142,7 +142,7 @@ const SocialItem = styled.li`
   color: #9B9B9B;
 
   svg {
-    font-size: 0.9rem;
+    font-size: 1.6rem;
     transition: all 0.25s;
 
     &:hover {
