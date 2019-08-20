@@ -15,9 +15,16 @@
   padding-top: calc(0.375em - 1px);
   text-align: center;
   white-space: nowrap;
+  transition: all 0.25s;
 
   svg {
     font-size: 2rem;
     align-self: center;
+  }
+
+  &:hover {
+    background: #fff;
+    color: #8c43ff;
+    border: 2px solid #fff;
   }
 }

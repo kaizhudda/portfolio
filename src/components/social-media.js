@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedium, faTwitter, faGithubSquare, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faMediumM, faTwitter, faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 import '../styles/pages/social-media.scss';
 
@@ -9,18 +10,24 @@ const SocialMedia = () => {
   return (
     <SocialMediaBar>
       <SocialItem>
-        <FontAwesomeIcon icon={faInstagram} />
-      </SocialItem>
-      <SocialItem>
         <a href="#" className="btn-social">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
       </SocialItem>
       <SocialItem>
-        <FontAwesomeIcon icon={faGithubSquare} />
+        <a href="#" className="btn-social">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
       </SocialItem>
       <SocialItem>
-        <FontAwesomeIcon icon={faMedium} />
+        <a href="#" className="btn-social">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </a>
+      </SocialItem>
+      <SocialItem>
+        <a href="#" className="btn-social">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
       </SocialItem>
     </SocialMediaBar>
   )
@@ -39,6 +46,6 @@ const SocialMediaBar = styled.ul`
 `
 
 const SocialItem = styled.li`
-  margin: 12px;
+  margin: 10px;
   color: #9B9B9B;
 `
