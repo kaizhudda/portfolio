@@ -1,0 +1,29 @@
+.Introduction {
+  border-top: 1px solid #e6ecf8;
+  padding: 14.4rem 2.4rem;
+  background: #8c43ff;
+  color: white;
+  text-align: center;
+
+  .title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 2.4rem;
+  }
+
+  .description {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
