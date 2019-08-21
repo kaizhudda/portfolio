@@ -8,11 +8,11 @@ const Introduction = () => {
         <div className="Introduction__content">
           <h1 className="title">Hi, I’m Kaiz. Nice to meet you.</h1>
           <h2 className="description">
-            Since beginning my journey as a freelance designer nearly 8 years ago, 
-            I've done remote work for agencies, consulted for startups, 
-            and collaborated with talented people to create digital products 
-            for both business and consumer use. I'm quietly confident, naturally curious, 
-            and perpetually working on improving my chops one design problem at a time.
+            A versatile Front-End Developer with 3 years of experience leveraging React, Redux 
+            and JavaScript to build commercial web-based applications for top New Zealand companies 
+            in the telecommunications, energy and healthcare sectors. Focused on engineering and 
+            delivering user centric solutions for achieving greater customer satisfaction. 
+            Thrive in working in a collaborative agile environment to deliver high quality products.
           </h2>
         </div>
       </div>
